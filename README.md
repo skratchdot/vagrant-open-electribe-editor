@@ -42,6 +42,22 @@ will have a Linux VM with Open Electribe Editor installed.  The VM will have acc
 to the same folder that the Vagrant file is in, so you will need to put your .esx files
 there (when opening/saving).
 
+**NOTE 2:**  
+As of 04/25/2020: the [bootstrap](bootstrap.sh) script doesn't 100% work anymore, but I was able to get
+things working after restarting the VM and performing some manual tasks by ssh'ing into the box.
+
+After the initial `vagrant up` command, I ran:
+
+```sh
+vagrant reload
+vagrant ssh
+```
+
+Then I ran a few of the [bootstrap](bootstrap.sh) commands manually inside the VM.  For some reason,
+it looks like a restart is needed before the `~/Desktop` folder exists.
+
+I don't have time to debug this now, so if anyone needs help running this, just email me or log a github issue. Thanks!
+
 
 ## Login Information
 

@@ -1,6 +1,6 @@
 # settings
 OEE_TAR="OpenElectribeEditor-v1.2.0-linux.gtk.x86.tar.gz"
-OEE_URL="https://open-electribe-editor.googlecode.com/files/OpenElectribeEditor-v1.2.0-linux.gtk.x86.tar.gz"
+OEE_URL="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/open-electribe-editor/OpenElectribeEditor-v1.2.0-linux.gtk.x86.tar.gz"
 
 # upgrade ubuntu
 sudo apt-get update
