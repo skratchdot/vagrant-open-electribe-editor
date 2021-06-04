@@ -6,11 +6,10 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # vm base box
-  config.vm.box = "hashicorp/precise32"
-  config.vm.box_version = "1.0.0"
+  config.vm.box = "ubuntu/trusty32"
 
   # provision
-  config.vm.provision "shell", path: "./bootstrap.sh"
+  config.vm.provision "shell", path: "./bootstrap.sh", privileged: false
 
   # virtualbox settings
   config.vm.provider "virtualbox" do |vb|
